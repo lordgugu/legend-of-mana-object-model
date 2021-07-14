@@ -2,9 +2,18 @@
   "name": "legend-of-mana-object-model",
   "version": "0.0.1",
   "description": "Object model used to develop software tools for Legend of Mana.",
-  "main": "index.js",
+  "main": "dist/legend-of-mana-object-model.cjs.js",
+  "module": "dist/legend-of-mana-object-model.esm.js",
+  "browser": "dist/legend-of-mana-object-model.umd.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "test"
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "build:types": "tsc -p ./tsconfig.json --outDir build --declaration true && api-extractor run",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "typedoc src --out docs"
   },
   "repository": {
     "type": "git",
@@ -21,5 +30,19 @@
   "bugs": {
     "url": "https://github.com/lordgugu/legend-of-mana-object-model/issues"
   },
-  "homepage": "https://github.com/lordgugu/legend-of-mana-object-model#readme"
+  "homepage": "https://github.com/lordgugu/legend-of-mana-object-model#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "eslint": "^7.30.0",
+    "rollup": "^2.53.1",
+    "ts-node": "^10.1.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@microsoft/api-extractor": "^7.18.3",
+    "typedoc": "^0.21.4"
+  }
 }
