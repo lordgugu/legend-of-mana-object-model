@@ -1,0 +1,25 @@
+{
+  "name": "legend-of-mana-object-model",
+  "version": "0.0.1",
+  "description": "Object model used to develop software tools for Legend of Mana.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordgugu/legend-of-mana-object-model.git"
+  },
+  "keywords": [
+    "Legend of Mana",
+    "Legend",
+    "Mana",
+    "Tempering"
+  ],
+  "author": "Marcus Majarra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lordgugu/legend-of-mana-object-model/issues"
+  },
+  "homepage": "https://github.com/lordgugu/legend-of-mana-object-model#readme"
+}
