@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "rootDir": "src",
-    "baseUrl": "src",
+    "rootDir": "./src",
+    "baseUrl": "./src",
     "moduleResolution": "node",
     "module": "esnext",
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
