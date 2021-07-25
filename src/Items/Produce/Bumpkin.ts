@@ -12,7 +12,7 @@ export const Bumpkin: ActiveItem = {
     const { energy } = project
 
     Stats.widenRange(project, Stats.Luck, -1, 3)
-    Stats.setMinimum(project, Stats.Luck, 5)
+    Stats.setMinimum(project, Stats.Luck, 3)
 
     if (energy >= 8) {
       project.cards.pending = Cards.Unspecified.Clown
